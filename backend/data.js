@@ -82,7 +82,7 @@ const data = {
       brand: 'Nike',
       rating: 4,
       numReviews: 5,
-      countInStoct: 10,
+      countInStoct: 200,
       description: 'High Quality Products',
     },
 
@@ -95,7 +95,7 @@ const data = {
       brand: 'Nike',
       rating: 4.5,
       numReviews: 12,
-      countInStoct: 10,
+      countInStoct: 12,
       description: 'High Quality Products',
     },
   ],
