@@ -9,7 +9,7 @@ const data = {
       brand: 'Nike',
       rating: 1,
       numReviews: 10,
-      countInStoct: 10,
+      countInStock: 10,
       description: 'High Quality Products',
     },
     {
@@ -21,7 +21,7 @@ const data = {
       brand: 'Nike',
       rating: 1.5,
       numReviews: 10,
-      countInStoct: 10,
+      countInStock: 10,
       description: 'High Quality Products',
     },
     {
@@ -33,7 +33,7 @@ const data = {
       brand: 'Nike',
       rating: 2,
       numReviews: 10,
-      countInStoct: 0,
+      countInStock: 0,
       description: 'High Quality Products',
     },
     {
@@ -45,7 +45,7 @@ const data = {
       brand: 'Nike',
       rating: 2.5,
       numReviews: 10,
-      countInStoct: 10,
+      countInStock: 10,
       description: 'High Quality Products',
     },
     {
@@ -57,7 +57,7 @@ const data = {
       brand: 'Nike',
       rating: 3,
       numReviews: 10,
-      countInStoct: 10,
+      countInStock: 10,
       description: 'High Quality Products',
     },
     {
@@ -69,7 +69,7 @@ const data = {
       brand: 'Nike',
       rating: 3.5,
       numReviews: 15,
-      countInStoct: 10,
+      countInStock: 10,
       description: 'High Quality Products',
     },
 
@@ -82,7 +82,7 @@ const data = {
       brand: 'Nike',
       rating: 4,
       numReviews: 5,
-      countInStoct: 200,
+      countInStock: 200,
       description: 'High Quality Products',
     },
 
@@ -95,7 +95,7 @@ const data = {
       brand: 'Nike',
       rating: 4.5,
       numReviews: 12,
-      countInStoct: 12,
+      countInStock: 12,
       description: 'High Quality Products',
     },
   ],
