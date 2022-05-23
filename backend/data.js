@@ -99,7 +99,7 @@ const data = {
       name: 'Nike T- Shirt 8',
       category: 'shirt',
       image: '/img/products/p8.jpg',
-      price: 220,
+      price: 90,
       brand: 'Nike',
       rating: 4.5,
       numReviews: 12,

@@ -33,10 +33,10 @@ export default function PlaseOrderScreen(props) {
               <div className="card card-body">
                 <h2>Shipping</h2>
                 <p>
-                  <strong>Name:</strong>
+                  <strong>Name: </strong>
                   {cart.shippingAddress.fullName}
                   <br />
-                  <strong>Address</strong>
+                  <strong>Address: </strong>
                   {cart.shippingAddress.address},{cart.shippingAddress.city},
                   {cart.shippingAddress.postalCode},
                   {cart.shippingAddress.country}
@@ -48,8 +48,8 @@ export default function PlaseOrderScreen(props) {
               <div className="card card-body">
                 <h2>Payment</h2>
                 <p>
-                  <strong>Method:</strong>
-                  {cart.shippingAddress.paymentMethod}
+                  <strong>Method: </strong>
+                  {cart.paymentMethod}
                 </p>
               </div>
             </li>
