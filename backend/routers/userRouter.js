@@ -1,11 +1,11 @@
-import experss from 'express';
+import express from 'express';
 import expressAsyncHandler from 'express-async-handler';
 import bcrypt from 'bcryptjs';
 import data from '../data.js';
 import User from '../models/userModel.js';
 import { generateToken, isAuth } from '../utils.js';
 
-const userRouter = experss.Router();
+const userRouter = express.Router();
 
 userRouter.get(
   '/seed',
@@ -32,7 +32,7 @@ userRouter.post(
         return;
       }
     }
-    res.status(401).send({ message: 'Invalid email or Password' });
+    res.status(401).send({ message: 'Invalid email or password' });
   })
 );
 
@@ -46,10 +46,10 @@ userRouter.post(
     });
     const createdUser = await user.save();
     res.send({
-      _id: user._id,
-      name: user.name,
-      email: user.email,
-      isAdmin: user.isAdmin,
+      _id: createdUser._id,
+      name: createdUser.name,
+      email: createdUser.email,
+      isAdmin: createdUser.isAdmin,
       token: generateToken(createdUser),
     });
   })
@@ -66,7 +66,6 @@ userRouter.get(
     }
   })
 );
-
 userRouter.put(
   '/profile',
   isAuth,
@@ -89,5 +88,4 @@ userRouter.put(
     }
   })
 );
-
 export default userRouter;

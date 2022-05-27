@@ -7,7 +7,7 @@ import { ORDER_CREATE_RESET } from '../constants/orderConstants';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 
-export default function PlaseOrderScreen(props) {
+export default function PlaceOrderScreen(props) {
   const cart = useSelector((state) => state.cart);
 
   if (!cart.paymentMethod) {

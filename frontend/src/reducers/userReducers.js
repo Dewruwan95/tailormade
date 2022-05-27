@@ -42,7 +42,6 @@ export const userSigninReducer = (state = {}, action) => {
       return state;
   }
 };
-
 export const userDetailsReducer = (state = { loading: true }, action) => {
   switch (action.type) {
     case USER_DETAILS_REQUEST:
@@ -55,7 +54,6 @@ export const userDetailsReducer = (state = { loading: true }, action) => {
       return state;
   }
 };
-
 export const userUpdateProfileReducer = (state = {}, action) => {
   switch (action.type) {
     case USER_UPDATE_PROFILE_REQUEST:

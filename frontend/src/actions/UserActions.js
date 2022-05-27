@@ -60,7 +60,6 @@ export const signout = () => (dispatch) => {
   localStorage.removeItem('shippingAddress');
   dispatch({ type: USER_SIGNOUT });
 };
-
 export const detailsUser = (userId) => async (dispatch, getState) => {
   dispatch({ type: USER_DETAILS_REQUEST, payload: userId });
   const {
@@ -79,7 +78,6 @@ export const detailsUser = (userId) => async (dispatch, getState) => {
     dispatch({ type: USER_DETAILS_FAIL, payload: message });
   }
 };
-
 export const updateUserProfile = (user) => async (dispatch, getState) => {
   dispatch({ type: USER_UPDATE_PROFILE_REQUEST, payload: user });
   const {
