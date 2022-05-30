@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cd frontend && npm install && npm run build",
+    "build": "cd frontend && npm install@16.13.1 && npm run build",
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
   },
   "repository": {
@@ -34,7 +34,7 @@
     "nodemon": "^2.0.4"
   },
   "engines": {
-    "node": "16.15.0",
+    "node": "16.13.1",
     "npm": "8.5.5"
   }
 }
