@@ -29,14 +29,14 @@ app.get('/api/config/paypal', (req, res) => {
 const __dirname = path.resolve();
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 // use following code for heroku
-app.use(express.static(path.join(__dirname, '/frontend/build')));
-app.get('*', (req, res) =>
-  res.sendFile(path.join(__dirname, '/frontend/build/index.html'))
-);
+// app.use(express.static(path.join(__dirname, '/frontend/build')));
+// app.get('*', (req, res) =>
+//   res.sendFile(path.join(__dirname, '/frontend/build/index.html'))
+// );
 //use following code for localhost
-// app.get('/', (req, res) => {
-//   res.send('Server is Ready');
-// });
+app.get('/', (req, res) => {
+  res.send('Server is Ready');
+});
 
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
